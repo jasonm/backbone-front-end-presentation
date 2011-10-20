@@ -1,4 +1,4 @@
-# Backbone.js
+# Backbone.js for Front End Developers
 
 This is an HTML slide deck.
 
