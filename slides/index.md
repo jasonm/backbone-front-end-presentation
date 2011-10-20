@@ -98,16 +98,14 @@ This is an HTML slide deck.
 * Sync
 * Underscore
 * $
+
+---
+# Extra fancy stuff
+
 * pushState
-
----
-# Resources
-
----
-# Get your code on
-
-* [Todo App example](http://documentcloud.github.com/backbone/#examples-todos)
-* [James Newbery's jasmine examples](https://github.com/froots/backbone-jasmine-examples/tree/master/public/javascripts)
+* localStorage
+* WebSockets
+* Testing
 
 ---
 # Further reading: Books on JavaScript
@@ -119,14 +117,20 @@ This is an HTML slide deck.
 * [JavaScript: The Definitive Guide](http://shop.oreilly.com/product/9780596805531.do) by David Flanagan
 
 ---
-# Further reading: Online resources
+# Further reading: Backbone.js resources online
 
-* [thoughtbot Backbone on Rails eBook](http://workshops.thoughtbot.com/backbone-js-on-rails)
+Free:
+
 * [Official Backbone docs](http://documentcloud.github.com/backbone/)
 * [Annotated source code](http://documentcloud.github.com/backbone/docs/backbone.html)
 * [Underscore docs](http://documentcloud.github.com/underscore/) and [source](http://documentcloud.github.com/underscore/docs/underscore.html)
 * [Backbone Google Group](https://groups.google.com/group/backbonejs)
+
+Paid:
+
+* [thoughtbot Backbone on Rails eBook](http://workshops.thoughtbot.com/backbone-js-on-rails)
 * [Peepcode episodes on Backbone](http://peepcode.com/products/backbone-js)
+* [Recipes with Backbone](http://recipeswithbackbone.com/)
 
 ---
 # Recap
