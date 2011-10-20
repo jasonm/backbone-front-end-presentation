@@ -121,7 +121,7 @@ This is an HTML slide deck.
 ---
 # Further reading: Online resources
 
-* [Backbone on Rails eBook](http://workshops.thoughtbot.com/backbone-js-on-rails?utm_source=jm-talk)
+* [thoughtbot Backbone on Rails eBook](http://workshops.thoughtbot.com/backbone-js-on-rails)
 * [Official Backbone docs](http://documentcloud.github.com/backbone/)
 * [Annotated source code](http://documentcloud.github.com/backbone/docs/backbone.html)
 * [Underscore docs](http://documentcloud.github.com/underscore/) and [source](http://documentcloud.github.com/underscore/docs/underscore.html)
@@ -141,12 +141,6 @@ This is an HTML slide deck.
 ---
 # Thanks!
 
-* Me:
-    * [jason.p.morrison@gmail.com](mailto:jason.p.morrison@gmail.com)
-    * [http://twitter.com/jayunit](http://twitter.com/jayunit)
-    * [http://jayunit.net](http://jayunit.net)
-* Slides:
-    * [View slides online](http://jayunit.net/backbone-js-on-rails-talk)
-    * [View slides source on GitHub](http://github.com/jasonm/backbone-js-on-rails-talk)
-* Code:
-    * [View chat app source on GitHub](http://github.com/jasonm/chat_app)
+* [http://jayunit.net](http://jayunit.net)
+* [View slides online](http://jayunit.net/backbone-front-end-presentation)
+* [View slides source on GitHub](http://github.com/jasonm/backbone-front-end-presentation/tree/gh-pages)
