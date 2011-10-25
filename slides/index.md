@@ -24,7 +24,17 @@ This is an HTML slide deck.
 * Hands up: Back end, front end, javascript, js MVC/MVVM frameworks 
 
 ---
-# Organize your JavaScript
+# Goals of this shift
+
+# Presenter Notes
+
+* Improve UX through responsiveness
+* First: Reduce server-side loads
+* Then: Reduce AJAX calls
+* Break that down: Background AJAX or No AJAX
+
+---
+# Frameworks
 
 # Presenter Notes
 
@@ -45,11 +55,10 @@ This is an HTML slide deck.
 * JavaScriptMVC
 * Spine.js
 * Backbone.js
-* Angular, Coherent, PureMVC-js, AFrameJS, TrimPath Junction,...
+* Angular, Coherent, PureMVC-js, AFrameJS, ...
 
 # Presenter Notes
 
-* [Decision Fatigue NY Times Mag article](http://www.nytimes.com/2011/08/21/magazine/do-you-suffer-from-decision-fatigue.html)
 * SC2: Similar, larger.  Less doc.  Declarative bindings, even in templates.
 * Knockout: MVVM.  WCF, Silverlight.
 * Batman: Node server, share models, data-bind templates
@@ -58,22 +67,12 @@ This is an HTML slide deck.
 * Backbone: Small, readable, intended for modification, extracted from DocumentCloud
 
 ---
-# SproutCore 2.0 Example: NOTES
+# Compare frameworks
+
+* [http://addyosmani.github.com/todomvc](http://addyosmani.github.com/todomvc)
 
 ---
-# Knockout.js Example: NOTES
-
----
-# JavaScriptMVC Example: NOTES
-
----
-# Spine.js Example: NOTES
-
----
-# Backbone.js Example: NOTES
-
----
-# Request dive (illustrate moving parts as you go)
+# Request dive
 
 * History
 * Router
@@ -83,14 +82,12 @@ This is an HTML slide deck.
 
 # Presenter Notes
 
+* (illustrate moving parts as you go)
 * History - Handles hashchange, pushstate, BB.history.start()
 * Router - read fragment, dispatch to action
 * View - Takes model data, presents in DOM.  Binds to DOM events, triggers app logic.  1:1 `el`, `this.$`, `events`, `$.delegate`, templating
 * Model - Conversions, computed properties, validations, access control, events change/change:attr,destroy,error
 * Collection - Ordered set of models.  URL, fetch(), reset(json), _.methods, comparator, events reset/add/remove/all model events
-* Sync - Encapsulation of persistence. Default `$.ajax` to RESTful JSON API.  Designed for override, global or per-class.
-* Underscore -  FP (select, reduce), bind, template, deep isEqual, clone, tap
-* $ - jQuery || Zepto
 
 ---
 # Peek under the hood
@@ -98,6 +95,12 @@ This is an HTML slide deck.
 * Sync
 * Underscore
 * $
+
+# Presenter Notes
+
+* Sync - Encapsulation of persistence. Default `$.ajax` to RESTful JSON API.  Designed for override, global or per-class.
+* Underscore -  FP (select, reduce), bind, template, deep isEqual, clone, tap
+* $ - jQuery || Zepto
 
 ---
 # Extra fancy stuff
@@ -108,7 +111,7 @@ This is an HTML slide deck.
 * Testing
 
 ---
-# Further reading: Books on JavaScript
+# Books on JavaScript
 
 * [JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do) by Douglas Crockford
 * [JavaScript Web Applications](http://shop.oreilly.com/product/0636920018421.do) by Alex MacCaw (Spine.js author)
@@ -117,30 +120,20 @@ This is an HTML slide deck.
 * [JavaScript: The Definitive Guide](http://shop.oreilly.com/product/9780596805531.do) by David Flanagan
 
 ---
-# Further reading: Backbone.js resources online
-
-Free:
+# Backbone.js reference materials
 
 * [Official Backbone docs](http://documentcloud.github.com/backbone/)
 * [Annotated source code](http://documentcloud.github.com/backbone/docs/backbone.html)
 * [Underscore docs](http://documentcloud.github.com/underscore/) and [source](http://documentcloud.github.com/underscore/docs/underscore.html)
 * [Backbone Google Group](https://groups.google.com/group/backbonejs)
 
-Paid:
+---
+# Backbone.js learning materials
 
 * [thoughtbot Backbone on Rails eBook](http://workshops.thoughtbot.com/backbone-js-on-rails)
 * [Peepcode episodes on Backbone](http://peepcode.com/products/backbone-js)
 * [Recipes with Backbone](http://recipeswithbackbone.com/)
-
----
-# Recap
-
-* Client-side frameworks
-* Moving parts of Backbone
-* Example
-* Code dive
-* Bonus topics
-* Resources
+* [Backbone.js live chat audio and notes](http://workshops.thoughtbot.com/pages/backbone-js-on-rails-qa-live-chat-1)
 
 ---
 # Thanks!

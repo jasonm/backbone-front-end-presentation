@@ -23,4 +23,4 @@ Push to the gh-pages branch:
 
 ## View
 
-http://jayunit.net/backbone-js-on-rails-talk/
+http://jayunit.net/backbone-front-end-presentation
