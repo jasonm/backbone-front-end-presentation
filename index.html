@@ -1295,7 +1295,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              1/13
+              1/14
             </aside>
           </footer>
         </div>
@@ -1340,7 +1340,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              2/13
+              2/14
             </aside>
           </footer>
         </div>
@@ -1375,7 +1375,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              3/13
+              3/14
             </aside>
           </footer>
         </div>
@@ -1396,9 +1396,9 @@ body.presenter_view div#current_presenter_notes section {
             
               <ul>
 <li>Where do frameworks come from?</li>
-<li>Paradigm -&gt; path-least-resistance -&gt; implementation -&gt; architecture -&gt; technical debt</li>
-<li>Server: Req/response (CGI, EHTML) -&gt; procedural &amp; tag soup *SP.</li>
-<li>Client: Async ($) -&gt; Deeply nested callbacks (if-like), Stateful (DOM) -&gt; app data stored in the DOM.</li>
+<li>Landscape (defining features) -&gt; path-least-resistance -&gt; impl -&gt; arch -&gt; tech dividends/debt</li>
+<li>Server: Req/response (CGI, EHTML) -&gt; procedural, high duplication, low modularity/encapsulation ( -&gt; testability)</li>
+<li>Client: Async ($) -&gt; Deeply nested callbacks (if-like), Stateful (DOM) -&gt; app data stored in the DOM, AGAIN high dupe, low modularity/encapsulation/testability</li>
 <li>Patterns for organization.  MVC is one.  Good for GUI.</li>
 <li>MVC over HTTP is often stateless.  Some state maintained with session</li>
 <li>CS-MVC in GUI is stateful.  THIS IS OKAY!</li>
@@ -1413,7 +1413,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              4/13
+              4/14
             </aside>
           </footer>
         </div>
@@ -1430,11 +1430,10 @@ body.presenter_view div#current_presenter_notes section {
             <section><ul>
 <li>SproutCore 2.0</li>
 <li>Knockout.js</li>
-<li>Batman.js</li>
 <li>JavaScriptMVC</li>
 <li>Spine.js</li>
 <li>Backbone.js</li>
-<li>Angular, Coherent, PureMVC-js, AFrameJS, ...</li>
+<li>(And then Angular, Coherent, PureMVC-js, AFrameJS, ...)</li>
 </ul>
 </section>
             
@@ -1444,12 +1443,11 @@ body.presenter_view div#current_presenter_notes section {
             <section>
             
               <ul>
-<li>SC2: Similar, larger.  Less doc.  Declarative bindings, even in templates.</li>
-<li>Knockout: MVVM.  WCF, Silverlight.</li>
-<li>Batman: Node server, share models, data-bind templates</li>
-<li>JavaScriptMVC: Larger, older, generators, dep mgmt, builds, testing, jQuery-based-and-like, JSON/REST transport</li>
+<li>Backbone: JavaScript-y, small, readable, intended for modification, extracted</li>
 <li>Spine.js: Very similar.  Even smaller.  Coffee.  Fully async, client rules.</li>
-<li>Backbone: Small, readable, intended for modification, extracted from DocumentCloud</li>
+<li>SC2: Similar, larger.  Less doc.  Declarative bindings, computed properties.</li>
+<li>JavaScriptMVC: Larger, older, generators, dep mgmt, builds, testing, jQuery-based-and-like, JSON/REST transport</li>
+<li>Knockout: MVVM.  (MS history: WPF, Silverlight.) Declarative bindings, computed properties.</li>
 </ul>
             
             </section>
@@ -1461,7 +1459,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              5/13
+              5/14
             </aside>
           </footer>
         </div>
@@ -1493,7 +1491,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              6/13
+              6/14
             </aside>
           </footer>
         </div>
@@ -1504,7 +1502,46 @@ body.presenter_view div#current_presenter_notes section {
         <div class="slide">
           <div class="inner">
             
-            <header><h1>Request dive</h1></header>
+            <header><h1>Example</h1></header>
+            
+            
+            <section><ul>
+<li><a href="http://backbonechat.herokuapp.com/">http://backbonechat.herokuapp.com/</a></li>
+</ul>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul>
+<li>Use the app</li>
+<li>Point out URLs changing</li>
+<li>Point out view update</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/index.md">slides/index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Code dive</h1></header>
             
             
             <section><ul>
@@ -1539,7 +1576,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              7/13
+              8/14
             </aside>
           </footer>
         </div>
@@ -1567,7 +1604,7 @@ body.presenter_view div#current_presenter_notes section {
             
               <ul>
 <li>Sync - Encapsulation of persistence. Default <code>$.ajax</code> to RESTful JSON API.  Designed for override, global or per-class.</li>
-<li>Underscore -  FP (select, reduce), bind, template, deep isEqual, clone, tap</li>
+<li>Underscore -  FP functions (select, reduce), bind, template, deep comparator isEqual, clone, tap</li>
 <li>$ - jQuery || Zepto</li>
 </ul>
             
@@ -1580,42 +1617,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              8/13
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides/index.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>Extra fancy stuff</h1></header>
-            
-            
-            <section><ul>
-<li>pushState</li>
-<li>localStorage</li>
-<li>WebSockets</li>
-<li>Testing</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides/index.md">slides/index.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              9/13
+              9/14
             </aside>
           </footer>
         </div>
@@ -1651,7 +1653,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              10/13
+              10/14
             </aside>
           </footer>
         </div>
@@ -1686,7 +1688,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              11/13
+              11/14
             </aside>
           </footer>
         </div>
@@ -1721,7 +1723,68 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              12/13
+              12/14
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Bonus round</h1></header>
+            
+            
+            <section><ul>
+<li>pushState</li>
+<li>localStorage</li>
+<li>WebSockets</li>
+<li>Testing</li>
+</ul>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul>
+<li>pushState<ul>
+<li>What does it look like? http://pjax.heroku.com/</li>
+<li>How does it work? https://developer.mozilla.org/en/DOM/Manipulating_the_browser_history</li>
+</ul>
+</li>
+<li>localStorage<ul>
+<li>http://documentcloud.github.com/backbone/docs/backbone-localstorage.html</li>
+</ul>
+</li>
+<li>WebSockets<ul>
+<li>Nothing specifically interesting, but modularity helps</li>
+</ul>
+</li>
+<li>Testing<ul>
+<li><a href="http://pivotal.github.com/jasmine/">Jasmine</a> goodies!  Get these.</li>
+<li>Spy/stub/mock, even your HTTP, with <a href="http://sinonjs.org/">sinon.js</a></li>
+<li>If you're looking for factory_girl.js, it's called <a href="https://github.com/bkeepers/rosie">Rosie</a></li>
+<li><a href="https://github.com/netzpirat/guard-jasmine">guard-jasmine</a> autotest your Jasmine with headless webkit (<a href="http://www.phantomjs.org/">phantomjs</a>)</li>
+<li>Get started with James Newbery's excellent blog posts on <a href="http://tinnedfruit.com/2011/03/03/testing-backbone-apps-with-jasmine-sinon.html">testing Backbone with Jasmine</a></li>
+<li>Check out his <a href="https://github.com/froots/backbone-jasmine-examples">examples on GitHub</a></li>
+</ul>
+</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/index.md">slides/index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              13/14
             </aside>
           </footer>
         </div>
@@ -1755,7 +1818,7 @@ body.presenter_view div#current_presenter_notes section {
             </aside>
             
             <aside class="page_number">
-              13/13
+              14/14
             </aside>
           </footer>
         </div>
@@ -1806,19 +1869,19 @@ body.presenter_view div#current_presenter_notes section {
       
       
       <tr id="toc-row-7">
-        <th><a href="#slide7">Request dive</a></th>
+        <th><a href="#slide7">Example</a></th>
         <td><a href="#slide7">7</a></td>
       </tr>
       
       
       <tr id="toc-row-8">
-        <th><a href="#slide8">Peek under the hood</a></th>
+        <th><a href="#slide8">Code dive</a></th>
         <td><a href="#slide8">8</a></td>
       </tr>
       
       
       <tr id="toc-row-9">
-        <th><a href="#slide9">Extra fancy stuff</a></th>
+        <th><a href="#slide9">Peek under the hood</a></th>
         <td><a href="#slide9">9</a></td>
       </tr>
       
@@ -1842,8 +1905,14 @@ body.presenter_view div#current_presenter_notes section {
       
       
       <tr id="toc-row-13">
-        <th><a href="#slide13">Thanks!</a></th>
+        <th><a href="#slide13">Bonus round</a></th>
         <td><a href="#slide13">13</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-14">
+        <th><a href="#slide14">Thanks!</a></th>
+        <td><a href="#slide14">14</a></td>
       </tr>
       
       
