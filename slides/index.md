@@ -1,11 +1,9 @@
-# Backbone.js for Front End Developers
+# Backbone.js at Boston Front End Development Meetup
 
 This is an HTML slide deck.
 
 * Press "h" for help, or use the arrow keys to navigate.
 * Press "p" for presenter notes, where you'll find a bunch of links, especially towards the end.
-
-# Presenter Notes
 
 ---
 # Web apps shifting client-side
